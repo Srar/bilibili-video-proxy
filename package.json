@@ -1,0 +1,35 @@
+{
+  "name": "bilibili-video-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/grunt build",
+    "watch": "./node_modules/.bin/grunt watch",
+    "clear": "./node_modules/.bin/grunt clear",
+    "rebuild": "./node_modules/.bin/grunt rebuild"
+  },
+  "author": "Srar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/express": "^4.0.36",
+    "@types/morgan": "^1.7.32",
+    "@types/node": "^8.0.9",
+    "@types/superagent": "^3.5.2",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.16",
+    "ts-node": "^3.2.0",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "superagent": "^3.5.2"
+  }
+}
