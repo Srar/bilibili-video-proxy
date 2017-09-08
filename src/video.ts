@@ -64,9 +64,10 @@ function downloadDurlToDirectory(id: number, durl: VideoDurlModel, directoryPath
             for (let i = 0; i < ranges.length; i++) {
                 let range = ranges[i];
                 let header = {
-                    "Referer": "bilibili.com",
+                    "Origin": "https://www.bilibili.com",
+                    "Referer": `https://www.bilibili.com/video/av${id}`,
                     "Range": `bytes=${range.min}-${range.max}`,
-                    "User-Agent": "Minecraft BakaXL Launch/0.0.1",
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
                 }
                 let filePath = path.join(directoryPath, `${durl.order}_${i}`);
                 console.log(`Downloading ${durl.order}-${i} of av${id}`);
